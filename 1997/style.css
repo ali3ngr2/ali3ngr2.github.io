@@ -1,0 +1,76 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  margin-bottom: 20px;
+  font-family: 'Audiowide', cursive;
+}
+
+
+body {
+  background-image: url("bg.png");
+  background-size: 100%;
+}
+
+
+
+body p{
+color: white;
+text-shadow: 2px 2px 2px black;
+font-family: 'Andale Mono', monospace;
+font-size: 12px;
+}
+
+body h1 {
+  color: limegreen;
+}
+
+body h2 {
+  color: hotpink;
+font-family: 'Andale Mono', monospace;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list li {
+  margin-bottom: 20px;
+}
+
+.blog-list h2 {
+    font-family: 'Andale Mono', monospace;
+  margin-top: 0;
+}
+
+.blog-list a {
+  color: hotpink;
+  text-decoration-line: underline;
+  text-decoration-style: dotted; 
+}
+
+.blog-list a:hover {
+  text-decoration: none;
+}
+
+.blog-list a:visited {
+  color: hotpink;
+  text-decoration-line: line-through;
+}
+
+.date, .author {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
