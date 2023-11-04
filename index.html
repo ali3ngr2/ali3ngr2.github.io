@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Page</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    color: grey;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+
+    a {
+      font-size: 1em;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome!</h1>
+  <nav>
+    <a href="link1.html">Link One</a>
+    <a href="link2.html">Link Two</a>
+  </nav>
+</div>
+</body>
+</html>
