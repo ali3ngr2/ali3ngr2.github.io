@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali3ngr2</title>
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-
-  .container {
-    text-align: center;
-  }
-
-  a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-
-  a:hover {
-    color: grey;
-  }
-
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 2em;
-    }
-
-    a {
-      font-size: 1em;
-    }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_GRoY_</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #093028 0%, #237A57 99%, #fad0c4 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-container {
+            width: 90%;
+            max-width: 300px;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            background: url('profile.jpg') no-repeat center center; /* Add your profile image URL here */
+            background-size: cover;
+        }
+        .title {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 24px;
+        }
+        .link-container {
+            width: 100%;
+        }
+        .link-button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .link-button:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <h1>Welcome!</h1>
-  <nav>
-    <a href="/1997/index.html">1997</a>
-    <a href="/aistock/">aistock</a>
-  </nav>
-
-</div>
-      <a rel="me" href="https://mastodon.social/@groy"> </a>
-
+    <div class="profile-container">
+        <div class="profile-image"></div>
+        <div class="title">_GRoY_</div>
+        <div class="link-container">
+            <a href="https://grimpixels.com/food-fame_fury/" class="link-button"></i> Food, Fame & Fury</a>
+            <a href="" class="link-button"></i> Online Store</a>
+             <a href="https://ghislainroy.com" class="link-button"></i> Graphic Design Portfolio</a>
+             <a href="https://ali3ngr2.github.io/aistock/" class="link-button"></i> AIstock</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
 </body>
 </html>
