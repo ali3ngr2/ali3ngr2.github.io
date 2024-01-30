@@ -16,7 +16,7 @@ body {
   background-size: cover; /* Scale the background image to cover the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
-  color: white;
+  color: black;
   font-family: 'Andale Mono', monospace;
 }
 body p {
@@ -78,8 +78,5 @@ footer {
   body h1, body h2 {
     font-size: 20px;
   }
-   /* Additional adjustments for the background on mobile */
-   body {
-    /* If necessary, you can override background properties specifically for mobile here */
-  }
+
 }
