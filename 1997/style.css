@@ -1,3 +1,5 @@
+/* Adjusted CSS for responsiveness and simplicity */
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -9,19 +11,17 @@ header {
   font-family: 'Audiowide', cursive;
 }
 
-
 body {
   background-image: url("bg.png");
-  background-size: 100%;
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  color: white;
+  font-family: 'Andale Mono', monospace;
 }
-
-
-
-body p{
-color: white;
-text-shadow: 2px 2px 2px black;
-font-family: 'Andale Mono', monospace;
-font-size: 12px;
+body p {
+  text-shadow: 2px 2px 2px black;
+  font-size: 12px;
 }
 
 body h1 {
@@ -30,7 +30,6 @@ body h1 {
 
 body h2 {
   color: hotpink;
-font-family: 'Andale Mono', monospace;
 }
 
 .blog-list {
@@ -43,15 +42,9 @@ font-family: 'Andale Mono', monospace;
   margin-bottom: 20px;
 }
 
-.blog-list h2 {
-    font-family: 'Andale Mono', monospace;
-  margin-top: 0;
-}
-
 .blog-list a {
   color: hotpink;
-  text-decoration-line: underline;
-  text-decoration-style: dotted; 
+  text-decoration: underline dotted; 
 }
 
 .blog-list a:hover {
@@ -59,8 +52,7 @@ font-family: 'Andale Mono', monospace;
 }
 
 .blog-list a:visited {
-  color: hotpink;
-  text-decoration-line: line-through;
+  text-decoration: line-through;
 }
 
 .date, .author {
@@ -73,4 +65,21 @@ footer {
   font-size: 14px;
 }
 
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 
+  body p, footer {
+    font-size: 16px;
+  }
+
+  body h1, body h2 {
+    font-size: 20px;
+  }
+   /* Additional adjustments for the background on mobile */
+   body {
+    /* If necessary, you can override background properties specifically for mobile here */
+  }
+}
