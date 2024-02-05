@@ -27,30 +27,58 @@ header img {
     max-width: 140px;
     height: auto;
 
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 5px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
-    padding: 5px;
-}
-
-nav a:hover {
-    background-color: #e5b956;
-
-}
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav li {
+        display: inline;
+        margin: 0 5px;
+        position: relative; /* Added for dropdown positioning */
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        padding: 5px;
+        display: block; /* Ensure proper padding and hover effect */
+    }
+    
+    nav a:hover {
+        background-color: #e5b956;
+    }
+    
+    /* Dropdown Content (Hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9; /* Light grey background */
+        min-width: 160px; /* Set a minimum width */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add some shadow */
+        z-index: 1;
+    }
+    
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block; /* Dropdown links are full-width */
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
 
 
 #comic-grid {
