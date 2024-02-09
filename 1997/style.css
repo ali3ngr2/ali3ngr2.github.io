@@ -31,11 +31,12 @@ body a {
 
 body h1 {
   color: limegreen;
+  margin-bottom: 60px;
 }
 
 body h2 {
   color: hotpink;
-  margin-bottom: 20px;
+  margin-bottom: 0px; !important;
 }
 
 .blog-list {
