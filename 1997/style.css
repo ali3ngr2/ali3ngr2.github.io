@@ -16,6 +16,7 @@ body {
   background-size: cover; /* Scale the background image to cover the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed;
   background-color: black;
   font-family: 'Andale Mono', monospace;
 }
