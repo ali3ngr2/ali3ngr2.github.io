@@ -35,6 +35,7 @@ body h1 {
 
 body h2 {
   color: hotpink;
+  margin-bottom: 5px;
 }
 
 .blog-list {
