@@ -135,6 +135,7 @@ footer {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
+    min-height: 1200px;
     border-radius: 8px;
 }
 
