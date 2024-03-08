@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: Montserrat, Arial, sans-serif;
     margin: 0;
@@ -135,7 +138,7 @@ footer {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    min-height: 400px;
+
     border-radius: 8px;
 }
 
