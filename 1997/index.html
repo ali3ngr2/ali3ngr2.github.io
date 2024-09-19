@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ali3ngr2's WebSpAce</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+            <img src="space.png" alt="UFO" width="60px" height="auto" style="position: absolute; top: 120px; left: -200px;">
+    <script>
+      var xPos = -200;
+      function animateUFO() {
+        xPos += 5;
+        if (xPos > window.innerWidth) {
+          xPos = -200;
+        }
+        document.querySelector("img").style.left = xPos + "px";
+        requestAnimationFrame(animateUFO);
+      }
+      animateUFO();
+    </script>
+
+        <h1>Ali3ngr2's WebSpAce</h1>
+      </header>
+      <ul class="blog-list">
+            <li>
+          <h2><a href="20240129.html">Devolution</a></h2>
+          <p>The reason this website looks like shit. </p>
+        <li>
+          <h2><a href="20230214.html">Valentine's Day!</a></h2>
+          <p>Rambling about Valentine's Day as a single man.</p>
+        </li>
+        <li>
+          <h2><a href="welcome.html">Welcome!</a></h2>
+          <p>Blogging like it's 1997.</p>
+        </li>
+      </ul>
+      <footer>
+        <center><img src="fire.png" width="100%"></center>
+        <p>Copyright © 2024 Ali3ngr2's WebSpAce</p>
+      </footer>
+    </div>
+  </body>
+</html>

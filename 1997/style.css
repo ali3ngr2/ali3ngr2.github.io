@@ -1,0 +1,90 @@
+/* Adjusted CSS for responsiveness and simplicity */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  margin-bottom: 20px;
+  font-family: 'Audiowide', cursive;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("bg.png");
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed;
+  background-color: black;
+  font-family: 'Andale Mono', monospace;
+}
+body p {
+  text-shadow: 2px 2px 2px black;
+  font-size: 16px;
+  color: white;
+}
+body a {
+  color: cyan;
+}
+
+body h1 {
+  color: limegreen;
+  margin-bottom: 60px;
+}
+
+body h2 {
+  color: hotpink;
+  margin-bottom: 20px; !important;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list li {
+  margin-bottom: 40px;
+}
+
+.blog-list a {
+  color: hotpink;
+  text-decoration: underline dotted; 
+}
+
+.blog-list a:hover {
+  text-decoration: none;
+}
+
+.blog-list a:visited {
+  text-decoration: line-through;
+}
+
+.date, .author {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+ 
+  }
+
+  body p, footer {
+    font-size: 16px;
+  }
+
+  body h1, body h2 {
+    font-size: 20px;
+  }
+
+}
