@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrations</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #efefef;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 6px;
+        }
+
+        .profile-stats {
+            display: flex;
+        }
+
+        .profile-stats span {
+            margin-right: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            width: 100%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-content {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform: scale(0.1);}
+            to {transform: scale(1);}
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+        }
+
+        .modal-prev {
+            left: 10px;
+        }
+
+        .modal-next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="profile-info">
+        <img class="profile-pic" src="profile.png" alt="Profile Picture">
+        <div class="profile-details">
+            <div class="profile-name">GRoY</div>
+            <div class="profile-stats">
+                <span><span id="post-count">0</span> posts</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+    </div>
+</div>
+
+<div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <button class="modal-nav modal-prev" onclick="changeModalImage(-1)">&lt;</button>
+    <button class="modal-nav modal-next" onclick="changeModalImage(1)">&gt;</button>
+</div>
+
+<script>
+    const gallery = document.querySelector('.gallery');
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.modal-close');
+    let currentImageIndex = 0;
+    const numImages = 43;
+
+    for (let i = 1; i <= numImages; i++) {
+        const img = document.createElement('img');
+        img.src = `img/${i.toString().padStart(2, '0')}.jpg`;
+        img.alt = `Post ${i}`;
+        img.dataset.index = i - 1;
+        img.addEventListener('click', openModal);
+        gallery.appendChild(img);
+    }
+
+    document.getElementById('post-count').textContent = numImages;
+
+    function openModal(event) {
+        currentImageIndex = parseInt(event.target.dataset.index);
+        modalImage.src = `img/${(currentImageIndex + 1).toString().padStart(2, '0')}.jpg`;
+        modal.style.display = "block";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    closeBtn.onclick = closeModal;
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+
+    function changeModalImage(direction) {
+        currentImageIndex = (currentImageIndex + direction + numImages) % numImages;
+        modalImage.src = `img/${(currentImageIndex + 1).toString().padStart(2, '0')}.jpg`;
+    }
+</script>
+
+</body>
+</html>
