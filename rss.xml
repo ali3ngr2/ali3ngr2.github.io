@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Food, Fame & Fury</title>
+        <link>https://grimpixels.com/fff.html</link>
+        <description>Food, Fame & Fury Updates</description>
+        <language>en-us</language>
+
+        <item>
+            <title>Chapter 1</title>
+            <link>https://grimpixels.com/chapter1.html</link>
+            <description>This is a short description of my first blog post.</description>
+            <pubDate>Sat, 24 Feb 2024 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Chapter 2</title>
+            <link>https://grimpixels.com/chapter2.html</link>
+            <description>Breezy gets a new "follower".</description>
+            <pubDate>Sat, 23 Mar 2024 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Chapter 3</title>
+            <link>https://grimpixels.com/chapter3.html</link>
+            <description>#boycottbreezy.</description>
+            <pubDate>Sat, 25 May 2024 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Chapter 4</title>
+            <link>https://grimpixels.com/chapter4.html</link>
+            <description>Intelligent Relationship Interaction Support.</description>
+            <pubDate>Sat, 24 Aug 2024 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Chapter 5</title>
+            <link>https://grimpixels.com/chapter5.html</link>
+            <description>People are idiots and they just can't get enough.</description>
+            <pubDate>Sat, 28 Sep 2024 12:00:00 GMT</pubDate>
+        </item>
+
+  
+
+    </channel>
+</rss>
