@@ -9,7 +9,7 @@
         <item>
             <title>Chapter 1</title>
             <link>https://grimpixels.com/chapter1.html</link>
-            <description>I gotta remember her name.<img src="img/ch1.jpg"></img></description>
+            <description>I gotta remember her name.</description>
             <pubDate>Sat, 24 Feb 2024 12:00:00 GMT</pubDate>
         </item>
 
@@ -40,6 +40,16 @@
             <description>People are idiots and they just can't get enough.</description>
             <pubDate>Sat, 28 Sep 2024 12:00:00 GMT</pubDate>
         </item>
+        <item>
+            <title>Chapter 6</title>
+            <link>https://grimpixels.com/chapter6.html</link>
+            <description><![CDATA[
+        <img src="img/ch6.png" alt="Blog Image" width="600"><br>
+        Ready to wash the filth off the streets..
+    ]]></description>
+            <pubDate>Sat, 22 Feb 2025 12:00:00 GMT</pubDate>
+        </item>
+
 
   
 
