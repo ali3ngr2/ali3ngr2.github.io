@@ -9,8 +9,7 @@
         <item>
             <title>Chapter 1</title>
             <link>https://grimpixels.com/chapter1.html</link>
-            <description>I gotta remember her name.</description>
-            <img src ="img/ch1.jpg">
+            <description>I gotta remember her name.<img src="img/ch1.jpg"></img></description>
             <pubDate>Sat, 24 Feb 2024 12:00:00 GMT</pubDate>
         </item>
 
