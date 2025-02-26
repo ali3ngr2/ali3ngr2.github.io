@@ -19,8 +19,18 @@
     <img src="/img/lost.png" width="60%" height=auto>
     <script data-goatcounter="https://ali3ngr2.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-    <footer>
-        <p>&copy; current year Grimpixels</p>
-    </footer>
+ <!-- Footerand script will be loaded here -->
+ <div id="footer"></div>
+ <script>
+     function loadSection(id, file) {
+         fetch(file)
+             .then(response => response.text())
+             .then(data => document.getElementById(id).innerHTML = data)
+             .catch(error => console.error(`Error loading ${file}:`, error));
+     }
+ 
+     loadSection("header", "header.html");
+     loadSection("footer", "footer.html");
+ </script>
 </body>
 </html>

@@ -9,17 +9,7 @@
 
 </head>
 <body>
-    <header>
-       <a href="index.html"> <img src="img/logo.png" alt="Logo" id="logo">
-        <h1>GRIMPIXELS</h1></a>
-        <nav>
-            <ul>
-                <li><a href="fff.html">Food, Fame & Fury</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
    <main>
     <section id="comic-grid">
         <!-- Replace with your comic images -->
@@ -33,8 +23,18 @@
 </main>
 <script data-goatcounter="https://ali3ngr2.goatcounter.com/count"
 async src="//gc.zgo.at/count.js"></script>
-    <footer>
-        <p>&copy; 2025 Grimpixels</p>
-    </footer>
+ <!-- Footerand script will be loaded here -->
+ <div id="footer"></div>
+ <script>
+     function loadSection(id, file) {
+         fetch(file)
+             .then(response => response.text())
+             .then(data => document.getElementById(id).innerHTML = data)
+             .catch(error => console.error(`Error loading ${file}:`, error));
+     }
+ 
+     loadSection("header", "header.html");
+     loadSection("footer", "footer.html");
+ </script>
 </body>
 </html>
